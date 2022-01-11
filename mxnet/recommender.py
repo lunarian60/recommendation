@@ -258,11 +258,8 @@ def transform_fn(net, data, input_content_type, output_content_type):
     """
     print('---- custom logging start ----')
     print(net)
-    print(input_content_type)
-    print(output_content_type)
     ctx = mx.cpu()
     parsed = json.loads(data)
-    print(type(parsed))
     print(parsed)
 
     trained_net, customer_index, product_index = net
